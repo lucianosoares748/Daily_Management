@@ -42,14 +42,15 @@ if st.button("Calcular"):
     EO = (TT_total / TD_total) * 100 if TD_total > 0 else 0
 
     # Resumo formatado
-    resumo = f"""
-    Dia: {data.strftime('%d/%m/%Y')}
-    Técnico: {tecnico}
-    Horas Trabalhadas: {TT_total:.2f}
-    EO: {EO:.2f}%
-    Horas de Manutenção: {TM_total:.2f}
-    DM: {DM:.2f}%
-    """
+    resumo = (
+        f"Dia: {data.strftime('%d/%m/%Y')}\n"
+        f"Técnico: {tecnico}\n"
+        f"Horas Trabalhadas: {TT_total:.2f}\n"
+        f"EO: {EO:.2f}%\n"
+        f"Horas de Manutenção: {TM_total:.2f}\n"
+        f"DM: {DM:.2f}%"
+    )
+
 
     st.success("✅ Cálculo realizado com sucesso!")
     st.markdown("### 📋 Resumo do Dia")
