@@ -10,7 +10,7 @@ st.set_page_config(page_title="Daily Management", layout="centered")
 st.title("📊 Daily Management - Cálculo de Indicadores")
 
 # Seleção do técnico
-tecnicos = ["Gustavo Galle", "Jonathan Giuli", "Diogo", "Dark"]
+tecnicos = [" ", "Gustavo Galle", "Jonathan Giuli", "Diogo", "Dark"]
 tecnico = st.selectbox("Selecione o Técnico", tecnicos)
 data = st.date_input("Data", datetime.today())
 
